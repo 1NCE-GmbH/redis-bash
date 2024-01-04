@@ -43,7 +43,7 @@ do
         if [ "${ARGV[0]}" = "message" ] && [ "${ARGV[1]}" = "${1}" ]
         then
             echo "Message from pubsub channel: ${ARGV[2]}"
-        elif [ -z ${ARGV} ]
+        elif [[ -z ${ARGV} ]]
         then
             sleep 1
             break
